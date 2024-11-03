@@ -52,24 +52,24 @@ return
 	nose_gear_wheel_diameter 	= 0.450, -- in m
 	main_gear_wheel_diameter 	= 0.600, -- in m
 	stores_number				= 4,
-	V_opt 						= 50, -- 60,-- Cruise speed (for AI)
-	V_take_off 					= 32, -- Take off speed in m/s (for AI)
-	V_land 						= 25, -- Land speed in m/s (for AI)
-	V_max_sea_level 			= 55, -- Max speed at sea level in m/s (for AI)
-	V_max_h 					= 60, -- Max speed at max altitude in m/s (for AI)
+	V_opt 						= 80, -- 60,-- Cruise speed (for AI)
+	V_take_off 					= 45, -- Take off speed in m/s (for AI)
+	V_land 						= 55, -- Land speed in m/s (for AI)
+	V_max_sea_level 			= 85, -- Max speed at sea level in m/s (for AI)
+	V_max_h 					= 180, -- Max speed at max altitude in m/s (for AI)
 	Vy_max 						= 2.21, -- Max climb speed in m/s (for AI)
-	Mach_max 					= 0.150, -- Max speed in Mach (for AI)
+	Mach_max 					= 0.450, -- Max speed in Mach (for AI)
 	H_max 					 	= 6000, -- m
-	Ny_min 						= 0, -- Min G (for AI)
+	Ny_min 						= -0.5, -- Min G (for AI)
 	Ny_max 						= 1.5,  -- Max G (for AI)
-	Ny_max_e 					= 1.5,  -- Max G (for AI)
+	Ny_max_e 					= 2.6,  -- Max G (for AI)
 	AOA_take_off 				= 0.08, -- AoA in take off (for AI)
-	bank_angle_max 				= 20, -- 10, -- Max bank angle (for AI)
+	bank_angle_max 				= 10, -- 10, -- Max bank angle (for AI)
 	average_fuel_consumption 	= 0.01, -- this is highly relative, but good estimates are 36-40l/min = 28-31kg/min = 0.47-0.52kg/s -- 45l/min = 35kg/min = 0.583kg/s
 	range 						= 600, -- Max range in km (for AI)
 	CAS_min 					= 72, -- if this is not OVERAL FLIGHT TIME, but jus LOITER TIME, than it sholud be 10-15 minutes.....CAS capability in minute (for AI)
-	thrust_sum_max 				= 1500,
-	thrust_sum_ab 				= 1500,
+	thrust_sum_max 				= 4500,
+	thrust_sum_ab 				= 4500,
 	has_afteburner 				= false, -- AFB yes/no
 	has_speedbrake 				= false, -- Speedbrake yes/no
 	tanker_type 				= 0, -- Tanker type if the plane is airrefuel capable
@@ -203,6 +203,10 @@ return
 				{ CLSID = "{LAU68_FFAR_WP156}", attach_point_position = { 0, 0, 0} }, -- WP x 7
 				{ CLSID = "{LAU68_FFAR_MK1HE}", attach_point_position = { 0, 0, 0}}, -- HE x 7
 				{ CLSID = "{LAU68_FFAR_MK5HEAT}", attach_point_position = { 0, 0, 0}}, 	-- HEAT x 7
+				{ CLSID = "{TELSON8_SNEBT254_RED}", attach_point_position = { 0, 0, 0}}, 	-- TELSON8
+				{ CLSID = "{TELSON8_SNEBT254_YELLOW}", attach_point_position = { 0, 0, 0}}, 	-- TELSON8
+				{ CLSID = "{TELSON8_SNEBT254_GREEN}", attach_point_position = { 0, 0, 0}}, 	-- TELSON8
+				{ CLSID = "{TELSON8_SNEBT256}", attach_point_position = { 0, 0, 0}}, 	-- TELSON8
 			}
 		),
 		pylon(2, 0, 1.4541, 0.9637, -2.6598, {use_full_connector_position = true, connector = "pylon_2", arg = 309, FiX = 0, FiY = 0, FiZ = 12},
@@ -212,6 +216,10 @@ return
 				{ CLSID = "{LAU68_FFAR_WP156}", attach_point_position = { 0, 0, 0} }, -- WP x 7
 				{ CLSID = "{LAU68_FFAR_MK1HE}", attach_point_position = { 0, 0, 0}}, -- HE x 7
 				{ CLSID = "{LAU68_FFAR_MK5HEAT}", attach_point_position = { 0, 0, 0}}, 	-- HEAT x 7
+				{ CLSID = "{TELSON8_SNEBT254_RED}", attach_point_position = { 0, 0, 0}}, 	-- TELSON8
+				{ CLSID = "{TELSON8_SNEBT254_YELLOW}", attach_point_position = { 0, 0, 0}}, 	-- TELSON8
+				{ CLSID = "{TELSON8_SNEBT254_GREEN}", attach_point_position = { 0, 0, 0}}, 	-- TELSON8
+				{ CLSID = "{TELSON8_SNEBT256}", attach_point_position = { 0, 0, 0}}, 	-- TELSON8
 			}
 		),
 		pylon(3, 0, 1.4541, 0.9636, 2.6593, {use_full_connector_position = true, connector = "pylon_3", arg = 310, FiX = 0, FiY = 0, FiZ = 12},
@@ -221,6 +229,10 @@ return
 				{ CLSID = "{LAU68_FFAR_WP156}", attach_point_position = { 0, 0, 0} }, -- WP x 7
 				{ CLSID = "{LAU68_FFAR_MK1HE}", attach_point_position = { 0, 0, 0}}, -- HE x 7
 				{ CLSID = "{LAU68_FFAR_MK5HEAT}", attach_point_position = { 0, 0, 0}}, 	-- HEAT x 7
+				{ CLSID = "{TELSON8_SNEBT254_RED}", attach_point_position = { 0, 0, 0}}, 	-- TELSON8
+				{ CLSID = "{TELSON8_SNEBT254_YELLOW}", attach_point_position = { 0, 0, 0}}, 	-- TELSON8
+				{ CLSID = "{TELSON8_SNEBT254_GREEN}", attach_point_position = { 0, 0, 0}}, 	-- TELSON8
+				{ CLSID = "{TELSON8_SNEBT256}", attach_point_position = { 0, 0, 0}}, 	-- TELSON8
 			}
 		),
 		pylon(4, 0, 1.4477, 0.9585, 2.9953, {use_full_connector_position = true, connector = "pylon_4", arg = 311, FiX = 0, FiY = 0, FiZ = 12},
@@ -230,6 +242,10 @@ return
 				{ CLSID = "{LAU68_FFAR_WP156}", attach_point_position = { 0, 0, 0} }, -- WP x 7
 				{ CLSID = "{LAU68_FFAR_MK1HE}", attach_point_position = { 0, 0, 0}}, -- HE x 7
 				{ CLSID = "{LAU68_FFAR_MK5HEAT}", attach_point_position = { 0, 0, 0}}, 	-- HEAT x 7
+				{ CLSID = "{TELSON8_SNEBT254_RED}", attach_point_position = { 0, 0, 0}}, 	-- TELSON8
+				{ CLSID = "{TELSON8_SNEBT254_YELLOW}", attach_point_position = { 0, 0, 0}}, 	-- TELSON8
+				{ CLSID = "{TELSON8_SNEBT254_GREEN}", attach_point_position = { 0, 0, 0}}, 	-- TELSON8
+				{ CLSID = "{TELSON8_SNEBT256}", attach_point_position = { 0, 0, 0}}, 	-- TELSON8
 			}
 		)
 	},
@@ -248,14 +264,14 @@ return
 	{ -- Cx = Cx_0 + Cy^2*B2 +Cy^4*B4
 		aerodynamics =
 		{
-			Cy0				=  0.85, -- 0.65,   -- zero AoA lift coefficient
-			Mzalfa			=  2.5, -- 1.25,    -- coefficients for pitch agility
-			Mzalfadt		=  0.8, -- 0.25,    -- coefficients for pitch agility
+            Cy0         = 0.2, -- zero AoA lift coefficient
+            Mzalfa      = 1.355, -- coefficients for pitch agility
+            Mzalfadt    = 0.8, -- coefficients for pitch agility
 			-- kjx				=  2.00,   --2.50,        -- koeficijent sile po nagibu (na X osi), sto vise - to brze valjanje i zaustavljanje
 			-- kjz				=  0.0018, --0.0025,    -- koeficijent sile po naklonu (na Z osi), sto vise - to brzi naklon i zaustavljanje
             kjx            =    2.25,
             kjz            =    0.00125,
-			Czbe			= -0.02,               -- coefficient, along Z axis (perpendicular), affects yaw, negative value means force orientation in FC coordinate system
+			Czbe			= 0.02,               -- coefficient, along Z axis (perpendicular), affects yaw, negative value means force orientation in FC coordinate system
 
             -- M      -- Mach number
             -- Cx0    -- Coefficient, drag, profile, of the airplane
@@ -266,41 +282,41 @@ return
             -- Aldop  -- Alfadop Max AOA at current M - departure threshold
             -- Cymax  -- Coefficient, lift, maximum possible (ignores other calculations if current Cy > Cymax)
 			-- ED bug: avion ne moze da sleti ako su naredne vrednosti suvise male (ili 0)
-			cx_gear = 0.01, -- 0.0317, -- coefficient, drag, gear
-			cx_flap = 0.0125, -- 0.125,  -- coefficient, drag, full flaps
-			cy_flap = 0.21,   -- coefficient, normal force, lift, flaps
-			cx_brk  = 0.06,   -- coefficient, drag, breaks
+            cx_gear     = 0.0277, -- coefficient, drag, gear
+            cx_flap     = 0.195, -- coefficient, drag, full flaps
+            cy_flap     = 0.05, -- coefficient, normal force, lift, flaps
+            cx_brk      = 0.06, -- coefficient, drag, breaks
 			table_data =
 				{
 					--      M		Cx0		 	Cya			 B		 	B4	      Omxmax		Aldop		Cymax
-					{	0.000	,	0.040	,	0.0750	,	0.046	,	0.0120	,	0.120	,	25.000	,	0.575	,	}	,
-					{	0.020	,	0.040	,	0.0741	,	0.048	,	0.0125	,	0.423	,	22.000	,	0.561	,	}	,
-					{	0.040	,	0.040	,	0.0722	,	0.051	,	0.0135	,	1.029	,	20.000	,	0.533	,	}	,
-					{	0.060	,	0.040	,	0.0713	,	0.052	,	0.0140	,	1.332	,	18.000	,	0.520	,	}	,
-					{	0.070	,	0.040	,	0.0705	,	0.053	,	0.0145	,	1.635	,	16.000	,	0.505	,	}	,
-					{	0.080	,	0.040	,	0.0695	,	0.054	,	0.0150	,	1.938	,	14.000	,	0.491	,	}	,
-					{	0.090	,	0.040	,	0.0685	,	0.055	,	0.0155	,	2.241	,	12.000	,	0.475	,	}	,
-					{	0.100	,	0.040	,	0.0676	,	0.056	,	0.0160	,	2.544	,	10.000	,	0.460	,	}	,
-					{	0.110	,	0.040	,	0.0665	,	0.057	,	0.0165	,	2.847	,	8.000	,	0.450	,	}	,
-					{	0.120	,	0.040	,	0.0658	,	0.057	,	0.0170	,	3.150	,	6.000	,	0.435	,	}	,
-					{	0.130	,	0.040	,	0.0650	,	0.057	,	0.0175	,	3.071	,	4.000	,	0.422	,	}	,
-					{	0.140	,	0.040	,	0.0640	,	0.057	,	0.0180	,	2.994	,	2.000	,	0.409	,	}	,
-					{	0.150	,	0.040	,	0.0603	,	0.057	,	0.0185	,	2.920	,	0.000	,	0.355	,	}	,
+					{	0.000	,	0.020	,	0.0150	,	0.046	,	0.0120	,	0.120	,	0.000	,	0.0	,	}	,
+					{	0.020	,	0.020	,	0.0141	,	0.048	,	0.0125	,	0.123	,	1.000	,	0.161	,	}	,
+					{	0.040	,	0.020	,	0.0122	,	0.051	,	0.0135	,	0.129	,	2.000	,	0.133	,	}	,
+					{	0.060	,	0.020	,	0.0813	,	0.052	,	0.0140	,	1.332	,	15.000	,	1.820	,	}	, --60mph
+					{	0.070	,	0.020	,	0.0805	,	0.053	,	0.0145	,	1.635	,	16.000	,	1.805	,	}	,
+					{	0.080	,	0.020	,	0.0895	,	0.054	,	0.0150	,	1.938	,	14.000	,	1.791	,	}	,
+					{	0.090	,	0.020	,	0.0885	,	0.055	,	0.0155	,	2.241	,	12.000	,	1.775	,	}	,
+					{	0.100	,	0.020	,	0.0776	,	0.056	,	0.0160	,	2.544	,	10.000	,	1.760	,	}	,  --100mph
+					{	0.110	,	0.020	,	0.0765	,	0.057	,	0.0165	,	2.847	,	8.000	,	1.750	,	}	,
+					{	0.120	,	0.020	,	0.0758	,	0.057	,	0.0170	,	3.150	,	6.000	,	1.735	,	}	,
+					{	0.130	,	0.020	,	0.0750	,	0.057	,	0.0175	,	3.071	,	4.000	,	1.722	,	}	,
+					{	0.140	,	0.020	,	0.0740	,	0.057	,	0.0180	,	2.994	,	2.000	,	1.709	,	}	,
+					{	0.150	,	0.020	,	0.0703	,	0.057	,	0.0185	,	2.920	,	0.000	,	1.655	,	}	,  ---153mph
 				},
 		},
 
 		engine =
 		{
-			Nominal_RPM      =     2200,
+			Nominal_RPM      =     3200,
 			Nmg				 =	     45.0,--67.5,
 			MinRUD			 =	     0.0,
 			MaxRUD			 =	     1.0,
 			MaksRUD			 =	     1.0,--0.925,
 			ForsRUD			 =	     1.0,
-			--type    = "Radial",
             cylinder_firing_order = {1, 3, 2, 4},
-			typeng			 =	     2,	      --PISTON ENGINE
-			hMaxEng			 =	     7.0,--12.5,
+			type    = "Piston",
+			name    = "RollsRoyceMerlin",
+			hMaxEng			 =	     12.0,--12.5,
 			dcx_eng			 =	     0.0015, --0.0015,
 			cemax			 =	     0.5,--1.5,--0.37,
 			cefor			 =	     0.5,--1.5,--0.37,
@@ -308,24 +324,24 @@ return
 			dpdh_f			 =	  1800,
 			k_adiab_1		 =	     0.037923,
 			k_adiab_2		 =	     0.0562,
-			MAX_Manifold_P_1 =	101325,--155774,
-			MAX_Manifold_P_2 =	101325,--206570,
-			MAX_Manifold_P_3 =	101325,--226648,
+			MAX_Manifold_P_1 =	351325,--155774,
+			MAX_Manifold_P_2 =	351325,--206570,
+			MAX_Manifold_P_3 =	351325,--226648,
 			k_after_cool	 =	     0.54,
 			Displ			 =	     5.916,                 -- ok
-			k_Eps			 =	     8,--1.72,--6,          -- veliki uticaj na vucnu silu, sto manje to jaca sila
-			Stroke			 =	     0.111, -- ok
-			V_pist_0		 =	     8.8,--10.0,--12,
+			k_Eps			 =	     1,--1.72,--6,          -- veliki uticaj na vucnu silu, sto manje to jaca sila
+			Stroke			 =	     0.151, -- ok
+			V_pist_0		 =	     12,--10.0,--12,
 			Nu_0			 =	     1.2,
 			Nu_1			 =	     0.9,
 			Nu_2			 =	     0.001,
-			N_indic_0		 =		 1000000,--1023040,           -- veliki uticaj na vucnu silu, sto vece to jaca
+			N_indic_0		 =		 1600000,--1023040,           -- veliki uticaj na vucnu silu, sto vece to jaca
 			N_fr_0			 =	     0.072,
 			N_fr_1			 =	     0.02,
 			Init_Mom		 =	    20,                     -- guess /was 220/
 			D_prop			 =	     1.88,                  -- ok
 			MOI_prop		 =	    10.5, --7.76            prop weight 50-55 pounds -- ok
-			k_gearbox		 =	     1.0,                   -- ok
+			k_gearbox		 =	     2.0,                   -- ok
 			P_oil			 =		495438,
 			k_boost			 =       1,                     -- was 3
 			k_cfug			 =       0.003,
@@ -334,40 +350,33 @@ return
 			k_reg			 =       0.003,
 			k_vel			 =       0.017,
 			sound_name	=	"Aircrafts/Engines/PackardMerlinProp/Engine",
-			--M    -- Mach number
-            --Pmax -- Engine thrust at military power
-            --Pfor -- Engine thrust at AFB
 
 			table_data =
 			{
 			--   M		Pmax
 
-				{0.00,	4000.0},--4000.0
-				{0.03,	3900.0},
-				{0.06,	3800.0},
-				{0.09,	3700.0},
-				{0.12,	3600.0},
-				{0.13,	3500.0},
-				{0.14,	3400.0},
-				{0.15,	3700.0},-- 153 mph
-				{0.16,	3600.0},
-				{0.17,	3100.0},
-				{0.18,	3000.0},-- 230 mph
-				{0.20,	2680.0},
---[[
-				{0.00,	0750.0},--4000.0
-				{0.03,	0725.0},
-				{0.06,	0700.0},
-				{0.09,	0675.0},
-				{0.12,	0650.0},
-				{0.13,	0625.0},
-				{0.14,	0600.0},
-				{0.15,	0675.0},-- 153 mph
-				{0.16,	0650.0},
-				{0.17,	0525.0},
-				{0.18,	0500.0},-- 230 mph
-				{0.20,	0420.0},
-]]
+				{0.00,	50000.0},--4000.0
+				{0.05,	56900.0}, -- 50
+				{0.10,	56800.0}, -- 100
+				{0.15,	56700.0},-- 153 mph
+				{0.42,	56600.0},
+				{0.53,	16500.0},
+				{0.64,	16400.0},
+				{0.75,	16700.0},
+				{0.86,	16600.0},
+				{0.97,	16100.0},
+				{0.98,	16000.0},-- 230 mph
+				{1.20,	15680.0},
+			},
+
+  			prop_direction      = 1, -- pos rotates cw looking fwd neg is ccw
+
+			prop_pitch_min      = 26.0, -- prop pitch min, degrees
+            prop_pitch_max      = 82.0, -- prop pitch max, degrees
+            prop_pitch_feather  = 90.0, -- prop pitch feather position, degrees if feather < prop_pitch_max no feathering available
+            prop_blades_count   = 2,
+            prop_locations      = {
+				{0, 0, 0}, {0, 0.0, 0.0}, -- roll, yaw, pitch angle in tangent value
 			},
 		},
 	},
